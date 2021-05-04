@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context="com.tempraturemonito.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                ads:cardBackgroundColor="@color/card1_color"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tempCard"
+                android:elevation="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:id="@+id/note"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="@string/mobile_temperature"
+                        android:layout_marginStart="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/temp"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/c" />
+
+
+                    <ToggleButton
+                        android:text="Convert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:nextFocusRight="@id/temp"
+                        android:id="@+id/toggleButton"
+                        android:textOn="F->C"
+                        android:textOff="C->F"/>
+
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="rateMe"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:background="#F44336"
+                        android:text="@string/rateus_on_play_store" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                ads:cardBackgroundColor="@color/card2_color"
+                android:layout_marginTop="20dp"
+                android:id="@+id/batteryCard"
+                android:layout_marginLeft="20dp"
+                android:elevation="42dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="380dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="match_parent">
+
+                    <com.hookedonplay.decoviewlib.DecoView xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        custom:dv_lineWidth="26dp"
+                        android:id="@+id/DynamicBatteryPercentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/DynamicBatteryPercentage"
+                        android:layout_alignLeft="@+id/DynamicBatteryPercentage"
+                        android:layout_alignTop="@+id/DynamicBatteryPercentage"
+                        android:layout_alignBottom="@+id/DynamicBatteryPercentage"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginBottom="228dp"
+                        android:text="@string/battery_level" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/perc_symbol"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="60sp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/text_percent" />
+
+                    <ImageView
+                        android:id="@+id/ch_icon"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/text_percent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="58dp"
+                        android:contentDescription="@string/img_desc"
+                        android:src="@drawable/ic_battery_charging"
+                        android:tint="@color/icon_tint" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    <com.google.android.gms.ads.AdView-->
+    <!--        android:id="@+id/bottomBanner"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        ads:adSize="BANNER"-->
+    <!--        ads:adUnitId="ca-app-pub-9666108206323574/4188387797"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        >-->
+    <!--    </com.google.android.gms.ads.AdView>-->
+</RelativeLayout>

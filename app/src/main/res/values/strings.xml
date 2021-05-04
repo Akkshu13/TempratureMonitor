@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Mobile Temperature</string>
+    <string name="channel_name">Temp_Mon</string>
+    <string name="channel_description">Temperature Monitoring</string>
+    <string name="celcius"> ℃</string>
+    <string name="moderate_temp">Mobile Temperature is Moderate</string>
+    <string name="overHeat">Mobile Is Overheating</string>
+    <string name="coolBattery">Battery is cool</string>
+    <string name="mobile_temperature">Mobile Temperature:</string>
+    <string name="c">C</string>
+    <string name="fahrenheit">F</string>
+    <string name="rateus_on_play_store">RateUs on Play Store</string>
+    <string name="battery_level">Battery Level</string>
+    <string name="perc_symbol">%</string>
+    <string name="img_desc">Img_desc</string>
+    <string name="toggle_dark_mode">Toggle Dark mode</string>
+    <string name="settings">Settings</string>
+    <string name="try_new_dark_theme">Try Our New Dark Look!!</string>
+    <string name="switch_to_dark_theme">Switch to Dark Theme</string>
+</resources>

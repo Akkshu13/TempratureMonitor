@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#ba000d</color>
+    <color name="colorPrimaryLight">#ff7961</color>
+    <color name="colorAccent">#1C76BD</color>
+
+
+    <color name="overHeating">#FF5B5B</color>
+    <color name="moderate">#FFC107</color>
+    <color name="cool">#3675F4</color>
+
+    <color name="low_battery">#FF3325</color>
+    <color name="medium_battery">#FF9800</color>
+    <color name="good_battery">#4CAF50</color>
+    <color name="full_battery">#00FF0A</color>
+
+    <color name="overHeating_text">#FFFFFF</color>
+    <color name="icon_tint">#1976D2</color>
+    <color name="full_battery_circle">#00C853</color>
+    <color name="bg">#E1E1E1</color>
+
+    <color name="card1_color">#FFFFFF</color>
+    <color name="card2_color">#FFFFFF</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimaryNight">#FFBF00</color>
+    <color name="colorPrimaryDarkNight">#FF5722</color>
+    <color name="bg_dark">#2E2E2E</color>
+    <color name="colorAccentNight">#2196F3</color>
+
+    <color name="trackBg">@color/bg</color>
+
+
+</resources>

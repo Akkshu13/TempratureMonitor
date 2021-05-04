@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tempraturemonitor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NightMode2">
+        <service
+            android:name="com.tempraturemonito.MyService"
+            android:label="@string/app_name"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="package com.tempraturemonitor.MyService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.tempraturemonito.batReceiver"
+            tools:ignore="Instantiatable"></receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9666108206323574~1151075857" />
+
+        <activity
+            android:name="com.tempraturemonito.MainActivity"
+            android:theme="@style/Theme.NightMode2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
